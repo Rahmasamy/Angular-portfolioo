@@ -1,0 +1,21 @@
+<div class="container2"id="skills">
+    <section class="skills-container-section bg-red-500 shadow-lg rounded-lg p-6 w-full mx-auto ">
+        <div class="skills-container p-6 bg-white rounded-lg shadow-xl">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Skills</h2>
+            <ul class="space-y-4 ">
+              <li class="p-4 bg-gray-50 rounded-md shadow-sm flex flex-wrap gap-4">
+                @for (skill of skills; track skill) {
+                <div class="text-xl font-semibold  text-gray-400"> #{{ skill.name }}</div>
+                
+                }
+              </li>
+            </ul>
+          </div>
+    </section>
+
+   
+
+
+
+
+</div>

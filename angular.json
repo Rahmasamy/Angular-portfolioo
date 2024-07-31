@@ -25,9 +25,13 @@
                 "glob": "**/*",
                 "input": "public"
               }
+              
             ],
             "styles": [
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
+             
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -97,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f213e9c1-1b9f-4c7d-a22e-9c691ba50768"
   }
 }

@@ -1,0 +1,29 @@
+
+  
+  <div class="container2" id="Projects">
+    <h1 class="flex items-center justify-center my-5 gradient-text text-4xl font-bold"> My Projects</h1>
+    <div class="row">
+        @for (project of projects; track $index) {
+      <div class="col-md-6 heightofcard">
+        
+        <div class="card mb-4 mt-6 heightofcard  transition duration-300 transform hover:shadow-2xl hover:scale-105 hover:bg-gray-100 " style="background-image: url({{project.img}}); background-repeat: no-repeat; background-size: cover;">
+            <h5 class="card-title text-center mt-4 text-white text-3xl font-bold">{{project.title}}</h5>
+            <div class="card-body-container flex flex-col justify-center items-center gap-25 ">
+                <div class="card-body w-6/12">
+           
+                    <p class="card-text my-2 leading-7 p-3 text-white font-bold text-2xl">{{project.para}}</p>
+                  </div>
+                  <div class="card-body w-6/12 mb-3">
+                    <a href={{project.githuplink}} class="card-link bg-slate-50 p-3 text-red-500 font-bold rounded hover:bg-red-700 hover:text-white hover:scale-105 transform transition-all duration-300 ">Github Link</a>
+                    <a href={{project.demo}} class="card-link  bg-slate-50 p-3 text-red-500 font-bold rounded hover:bg-red-700 hover:text-white hover:scale-105 transform transition-all duration-300">Live Demo</a>
+                  </div>
+            </div>
+      
+       
+        </div>
+      </div>
+    }
+    </div>
+  
+  </div>
+  
